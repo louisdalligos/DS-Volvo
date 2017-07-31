@@ -10,3 +10,1079 @@ License URI: LICENSE
 Text Domain: ds-skoda
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "volvo_sans_webregular";
+  background: #ececec;
+  font-size: 16px;
+  color: #003057;
+}
+
+strong,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "volvo_sans_webbold";
+  font-weight: normal;
+}
+
+a {
+  color: #003057;
+  margin-bottom: 0;
+}
+a:hover, a:focus, a:active {
+  color: #003057;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+small {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+hr {
+  border-top: 1px solid #cdcdcd;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+.btn {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "volvo_sans_webmedium";
+  font-size: 12px;
+}
+
+.btn-default {
+  color: #FFF;
+  background-color: #959595;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active {
+  background-color: #BFBEBE;
+  color: #FFF;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: #003057;
+}
+
+/* Lists */
+.list-inline {
+  margin-left: 0;
+}
+
+/* Forms */
+label {
+  font-weight: normal;
+}
+
+select {
+  webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #CCC;
+}
+
+.form-control {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Helper classes */
+.full-img {
+  width: 100%;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.body-text-color {
+  color: #161618;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.sans-bold-text {
+  font-family: "volvosansbold";
+}
+
+.light-text {
+  font-family: "volvosanslight";
+}
+
+.medium-text {
+  font-family: "volvo_sans_webmedium";
+}
+
+.bold-text {
+  font-family: "volvo_sans_webbold";
+}
+
+.broad-text {
+  font-family: "volvobroadregular";
+  text-transform: uppercase;
+}
+
+.btn-white {
+  background-color: #FFF;
+  color: #003057;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.primary-bg {
+  background-color: #003057;
+}
+
+.hover-bg {
+  background-color: #161618 !important;
+}
+
+.container {
+  position: relative;
+}
+
+.btn-border-primary {
+  background-color: #FFF;
+  border: 1px solid #003057;
+  color: #003057;
+}
+.btn-border-primary:hover, .btn-border-primary:focus {
+  background-color: #003057;
+  color: #FFF;
+  border: 1px solid transparent;
+}
+
+.header-white-bg {
+  background-color: #f6f6f6;
+  color: #003057;
+}
+.header-white-bg .volvo1_dealer-info {
+  color: #003057;
+}
+.header-white-bg ul li a {
+  color: #5b7f95;
+}
+.header-white-bg #volvo1_main-menu > li > a:hover, .header-white-bg #volvo1_main-menu > li > a:active, .header-white-bg #volvo1_main-menu > li > a:focus {
+  color: #003057;
+  border-color: #003057;
+}
+
+.default-header-bg {
+  background-color: #161618;
+}
+.default-header-bg ul li a,
+.default-header-bg .volvo1_dealer-info {
+  color: #FFF;
+}
+.default-header-bg #volvo1_main-menu > li > a:hover, .default-header-bg #volvo1_main-menu > li > a:focus {
+  border-color: transparent;
+}
+
+.volvo1_page-header {
+  position: relative;
+  font-size: 14px;
+  height: 110px;
+}
+.volvo1_page-header .container {
+  position: relative;
+}
+.volvo1_page-header .volvo1-main-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.volvo1_page-header .volvo_dealer-name {
+  font-family: "volvo_sans_webmedium";
+  font-size: 20px;
+  margin: 25px 0 0;
+}
+.volvo1_page-header address {
+  margin-bottom: 0;
+  line-height: 14px;
+}
+.volvo1_page-header ul li a {
+  text-transform: uppercase;
+}
+.volvo1_page-header .list-inline > li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.volvo1_page-header .list-inline > li:first-child {
+  padding-left: 0;
+}
+.volvo1_page-header .logo-wrapper {
+  width: 79px;
+}
+
+#volvo1_main-menu {
+  position: relative;
+  margin-bottom: 0;
+}
+#volvo1_main-menu > li > a {
+  display: block;
+  padding: 45px 0 43px;
+  border-bottom: 2px solid;
+  border-color: transparent;
+  vertical-align: middle;
+}
+#volvo1_main-menu > li > a:hover, #volvo1_main-menu > li > a:focus {
+  text-decoration: none;
+}
+
+.mega-menu {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  background-color: #ececec;
+  padding: 30px;
+  width: 100%;
+  height: 95px;
+  display: none;
+  z-index: 10;
+}
+.mega-menu ul {
+  margin-left: 0;
+}
+.mega-menu ul > li {
+  display: inline;
+}
+.mega-menu ul > li > a {
+  color: #5b7f95;
+  padding-right: 20px;
+}
+.mega-menu ul > li > a:hover, .mega-menu ul > li > a:focus {
+  color: #003057;
+  text-decoration: none;
+}
+
+.megamenu-overlay {
+  display: none;
+  background: #000;
+  opacity: 0;
+  position: fixed;
+  top: 205px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+}
+
+#volvo1_header-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#volvo1_header-mobile .fa {
+  font-size: 40px;
+  color: #959595;
+}
+#volvo1_header-mobile button {
+  background-color: transparent;
+  left: 15px;
+  border: 0;
+}
+#volvo1_header-mobile button:focus {
+  outline: 0;
+}
+#volvo1_header-mobile button,
+#volvo1_header-mobile .call-mobile-btn {
+  color: #FFF;
+  position: relative;
+  top: 25px;
+  text-transform: uppercase;
+}
+#volvo1_header-mobile .call-mobile-btn {
+  float: right;
+  right: 25px;
+}
+#volvo1_header-mobile .call-mobile-btn:hover, #volvo1_header-mobile .call-mobile-btn:focus {
+  text-decoration: none;
+}
+#volvo1_header-mobile .call-mobile-btn .fa {
+  display: block;
+}
+
+#volvo_mobile-menu {
+  border-top: 1px solid #343438;
+  width: 100%;
+  background-color: #161618;
+  position: absolute;
+  top: 108px;
+  z-index: 200;
+  padding: 20px;
+}
+#volvo_mobile-menu a {
+  color: #FFF;
+  display: block;
+  padding: 10px;
+}
+#volvo_mobile-menu a:hover, #volvo_mobile-menu a:focus {
+  text-decoration: none;
+  background-color: #222;
+}
+
+.volvo1_page-footer {
+  width: 100%;
+  background: #003057;
+  color: #FFF;
+  font-size: 14px;
+  padding-top: 25px;
+}
+.volvo1_page-footer span {
+  display: block;
+}
+.volvo1_page-footer h4 {
+  text-transform: uppercase;
+  font-family: "volvosansbold";
+  margin-bottom: 18px;
+}
+.volvo1_page-footer .volvo1_footer-top {
+  position: relative;
+  background: #03233d;
+}
+.volvo1_page-footer .volvo1_footer-top .volvo1_footer-widget {
+  text-align: center;
+}
+.volvo1_page-footer .volvo1_footer-top .volvo1_map-buttons {
+  margin-bottom: 20px;
+}
+.volvo1_page-footer .volvo1_footer-top .volvo1_map-buttons .btn-block {
+  width: 185px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .volvo1_page-footer .volvo1_footer-top .volvo1_map-buttons .btn-block {
+    width: 100%;
+  }
+}
+.volvo1_page-footer .volvo1_footer-top .volvo1_map-buttons .btn-white {
+  margin-bottom: 10px;
+}
+.volvo1_page-footer .volvo1_footer-bottom {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.volvo1_page-footer .volvo1_footer-bottom a {
+  color: #FFF;
+}
+.volvo1_page-footer .volvo1_footer-bottom a:hover {
+  color: #FFF;
+}
+.volvo1_page-footer .volvo1_footer-bottom .social-profiles {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.volvo1_page-footer .volvo1_footer-bottom .social-profiles li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.volvo1_page-footer .volvo1_footer-bottom .social-profiles .fa {
+  font-size: 30px;
+}
+.volvo1_page-footer .volvo1_footer-bottom .volvo1_copyright-text {
+  margin-bottom: 50px;
+}
+
+.home.volvo1_page-body-content {
+  padding: 60px 0 40px;
+}
+
+.volvo1_page-body-content {
+  font-family: "volvosanslight";
+}
+.volvo1_page-body-content h1, .volvo1_page-body-content h2, .volvo1_page-body-content h3, .volvo1_page-body-content h4, .volvo1_page-body-content h5, .volvo1_page-body-content h6 {
+  margin-top: 0;
+}
+.volvo1_page-body-content span {
+  display: block;
+}
+.volvo1_page-body-content address {
+  margin-bottom: 0;
+}
+.volvo1_page-body-content .volvo1-inner-content {
+  background-color: #FFF;
+  padding: 40px 0;
+}
+.volvo1_page-body-content .page-heading-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 0;
+  padding: 30px 0;
+}
+.volvo1_page-body-content .service-icon {
+  margin-bottom: 25px;
+  width: 30%;
+}
+@media (min-width: 768px) {
+  .volvo1_page-body-content .service-icon {
+    width: 70%;
+  }
+}
+
+.volvo1_banner-slide {
+  background-color: #003057;
+  margin-bottom: 20px;
+}
+.volvo1_banner-slide .carousel-inner > .item:after {
+  content: "";
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.page-banner {
+  width: 100%;
+  position: relative;
+}
+.page-banner .slide-caption-text {
+  text-align: center;
+  z-index: 150;
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.page-banner .slide-caption-text h2 {
+  font-family: "volvobroadregular";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.page-banner .slide-caption-text p {
+  font-family: "volvosanslight";
+}
+.page-banner .slide-caption-text .btn {
+  width: 125px;
+}
+
+.volvo1_home-cta-section .form-horizontal .control-label {
+  padding-top: 0;
+  text-align: left;
+}
+.volvo1_home-cta-section .form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: -10px;
+  margin-bottom: 10px;
+}
+.volvo1_home-cta-section .form-horizontal .btn {
+  margin-right: 5px;
+}
+.volvo1_home-cta-section .cta-item {
+  position: relative;
+  border-left: 1px solid #cdcdcd;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .volvo1_home-cta-section .cta-item {
+    min-height: 345px;
+    padding-right: 15px;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+}
+.volvo1_home-cta-section .cta-item .cta-buttons {
+  width: 93%;
+}
+@media (min-width: 768px) {
+  .volvo1_home-cta-section .cta-item .cta-buttons {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.volvo1_home-cta-section .cta-item .cta-buttons .btn {
+  width: 48%;
+  padding: 6px 8px;
+}
+.volvo1_home-cta-section .cta-header {
+  background-color: #003057;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: "volvo_sans_webmedium";
+}
+.volvo1_home-cta-section .cta-header .cta-header-image {
+  float: left;
+  width: 50%;
+}
+.volvo1_home-cta-section .cta-header .cta-header-title {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .volvo1_home-cta-section .cta-header .cta-header-title {
+    float: right;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+}
+.volvo1_home-cta-section .cta-header .cta-header-title h4 {
+  margin: 0;
+}
+.volvo1_home-cta-section .cta-header .cta-header-title h4 > .volvo1_cta-title {
+  color: #FFF;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .volvo1_home-cta-section .cta-header .cta-header-title h4 > .volvo1_cta-title {
+    display: block;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .volvo1_home-cta-section .cta-header .cta-header-title h4 > .volvo1_cta-title {
+    cursor: normal;
+  }
+}
+.volvo1_home-cta-section .cta-header .cta-header-title h4 > .volvo1_cta-title:hover, .volvo1_home-cta-section .cta-header .cta-header-title h4 > .volvo1_cta-title:focus {
+  text-decoration: none;
+}
+.volvo1_home-cta-section .cta-header .cta-header-title h4 > .volvo1_cta-title .fa {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.volvo1_home-cta-section .cta-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.volvo1_home-cta-section #volvo1_cta2 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.volvo1_home-cta-section #volvo1_cta2 .cta-buttons {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.volvo1_home-cta-section #volvo1_cta2 .cta-buttons .btn {
+  float: left;
+}
+
+.volvo1_car-gallery-filter {
+  background-color: #FFF;
+  width: 100%;
+  padding: 30px 0;
+}
+.volvo1_car-gallery-filter h3 {
+  text-transform: uppercase;
+  font-family: "volvo_sans_webmedium";
+}
+.volvo1_car-gallery-filter .tab-content .row {
+  margin-bottom: 30px;
+}
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.tab-content {
+  padding-top: 15px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.nav-tabs > li > a {
+  font-family: "volvosanslight";
+  text-transform: uppercase;
+  color: #959595;
+  font-size: 16px;
+  padding: 0 0 0 10px;
+  margin-right: 0;
+  line-height: 16px;
+}
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #003057;
+}
+.nav-tabs > li > a:hover:after, .nav-tabs > li > a:focus:after {
+  color: #959595;
+}
+.nav-tabs > li > a:after {
+  content: "|";
+  padding-left: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.nav-tabs > li:last-child a:after {
+  content: "";
+}
+
+.nav-tabs > li:first-child a {
+  padding-left: 0;
+}
+
+.nav-tabs li.active a:after {
+  font-family: "volvosanslight";
+  color: #959595;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  font-size: 17px;
+  font-family: "volvo_sans_webmedium";
+  color: #003057;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.volvo1_forms hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.volvo1_forms label {
+  color: #283239;
+  display: block;
+  font-family: "volvo_sans_webbold";
+  font-size: 12px;
+}
+.volvo1_forms .form-control {
+  color: #000;
+}
+
+#volvo1_cta2 .form-control {
+  padding: 0;
+  line-height: 14px;
+  height: 25px;
+  color: #003057;
+}
+
+#book-service-form,
+#email-enquiry-form,
+#enquiry-form {
+  padding: 40px 0 60px;
+}
+#book-service-form textarea,
+#email-enquiry-form textarea,
+#enquiry-form textarea {
+  height: 105px;
+}
+#book-service-form .btn,
+#email-enquiry-form .btn,
+#enquiry-form .btn {
+  float: right;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.volvo1_page-body-content {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.row hr {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.map {
+  background-color: #03233d;
+  width: 100%;
+  height: 295px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .map {
+    margin-bottom: 0;
+  }
+}
+
+.page-banner .map {
+  height: 300px;
+}
+
+.page-banner .page-navigation {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.page-banner .page-navigation a {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.overlay-bg {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC44Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.device-md.contact-page .volvo1_footer-top,
+.device-lg.contact-page .volvo1_footer-top,
+.device-xxs.contact-page .volvo1_footer-top,
+.device-xs.contact-page .volvo1_footer-top {
+  display: none;
+}
+.device-md.contact-page .volvo1_page-footer .volvo1_footer-bottom,
+.device-lg.contact-page .volvo1_page-footer .volvo1_footer-bottom,
+.device-xxs.contact-page .volvo1_page-footer .volvo1_footer-bottom,
+.device-xs.contact-page .volvo1_page-footer .volvo1_footer-bottom {
+  padding-top: 30px;
+}
+
+.mobile-email-enquiry {
+  padding: 20px;
+  text-align: center;
+}
+
+.marker-popup {
+  color: #4d4f53;
+}
+.marker-popup h3 {
+  font-size: 22px;
+}
+.marker-popup p {
+  font-size: 15px;
+}
+
+.volvo1_vehicle-details-content strong,
+.volvo1_vehicle-details-content h2 {
+  font-family: "volvo_sans_webmedium";
+}
+.volvo1_vehicle-details-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.volvo1_vehicle-details-content .gallery-intro-text {
+  padding: 50px 0;
+}
+.volvo1_vehicle-details-content .volvo1_gallery {
+  width: 100%;
+  position: relative;
+}
+.volvo1_vehicle-details-content .volvo1_gallery .gallery-img-nav {
+  width: 75%;
+  position: relative;
+  top: -90px;
+}
+.volvo1_vehicle-details-content .volvo1_gallery .gallery-img-nav img {
+  float: left;
+}
+.volvo1_vehicle-details-content .volvo1_gallery .view-gallery-btn {
+  font-family: "volvo_sans_webmedium";
+  text-transform: uppercase;
+  font-size: 24px;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #FFF;
+}
+.volvo1_vehicle-details-content .volvo1_gallery .view-gallery-btn:hover, .volvo1_vehicle-details-content .volvo1_gallery .view-gallery-btn:focus {
+  text-decoration: none;
+}
+.volvo1_vehicle-details-content .volvo1_features {
+  width: 100%;
+}
+.volvo1_vehicle-details-content .volvo1_features .features-inner {
+  margin-top: 20px;
+}
+.volvo1_vehicle-details-content .volvo1_range {
+  width: 100%;
+  background-color: #FFF;
+  padding: 60px 0;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item {
+  border: 2px solid #ececec;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item .range-header {
+  padding: 15px 10px;
+  text-align: center;
+  background-color: #003057;
+  color: #FFF;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item .range-header h4 {
+  margin: 0;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item .range-item-inner {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item .range-item-inner img {
+  padding: 40px 0;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item .range-item-inner .price {
+  font-size: 40px;
+  margin: 0 0 5px;
+}
+.volvo1_vehicle-details-content .volvo1_range .range-item .range-item-inner .btn {
+  margin: 10px 0;
+}
+.volvo1_vehicle-details-content #enquiry-form {
+  padding: 50px 0;
+}
+
+.device-xxs h1,
+.device-xxs .volvo1_page-body-content .page-heading-title,
+.device-xs h1,
+.device-xs .volvo1_page-body-content .page-heading-title {
+  font-size: 24px;
+}
+.device-xxs h2,
+.device-xs h2 {
+  font-size: 22px;
+}
+.device-xxs h3,
+.device-xs h3 {
+  font-size: 20px;
+}
+
+.device-sm .volvo1_vehicle-details-content h2 {
+  font-size: 30px;
+}
+
+.device-md .volvo1_page-header .container,
+.device-lg .volvo1_page-header .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.device-sm .volvo1_page-header address {
+  width: 70%;
+  text-align: right;
+  float: right;
+}
+
+.device-sm .volvo1_page-header .volvo_dealer-name {
+  margin: 20px 0 0;
+}
+
+.device-xxs #volvo1_header-mobile button .fa,
+.device-xs #volvo1_header-mobile button .fa {
+  display: block;
+}
+
+.device-sm #volvo1_header-mobile button {
+  top: 35px;
+}
+.device-sm #volvo1_header-mobile button .fa {
+  margin-right: 20px;
+}
+
+.device-xxs .slide-caption-text,
+.device-xs .slide-caption-text {
+  width: 100%;
+  padding: 0 10px;
+}
+.device-xxs .slide-caption-text p,
+.device-xs .slide-caption-text p {
+  margin: 0;
+  font-size: 13px;
+}
+.device-xxs .slide-caption-text h2,
+.device-xs .slide-caption-text h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.device-sm .slide-caption-text h2 {
+  font-size: 40px;
+}
+
+.device-md .slide-caption-text h2,
+.device-lg .slide-caption-text h2 {
+  font-size: 70px;
+}
+
+.device-xxs .volvo1_footer-widget,
+.device-xs .volvo1_footer-widget {
+  margin-bottom: 40px;
+}
+
+.device-xxs .trading-hours-widget,
+.device-xs .trading-hours-widget,
+.device-sm .trading-hours-widget,
+.device-sm .contact-widget {
+  margin-top: 355px;
+}
+
+.device-sm .trading-hours-widget,
+.device-sm .contact-widget {
+  margin-bottom: 50px;
+}
+
+.device-sm .contact-widget,
+.device-md .contact-widget,
+.device-lg .contact-widget,
+.device-sm .trading-hours-widget,
+.device-md .trading-hours-widget,
+.device-lg .trading-hours-widget {
+  text-align: left !important;
+}
+
+.device-sm .volvo1_map-widget {
+  margin-bottom: 20px;
+}
+
+.device-md .trading-hours-widget,
+.device-md .contact-widget,
+.device-lg .trading-hours-widget,
+.device-lg .contact-widget {
+  margin-top: 10px;
+}
+
+.device-xxs .volvo1_map-widget,
+.device-xs .volvo1_map-widget,
+.device-sm .volvo1_map-widget {
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.device-md .volvo1_icon-wrap,
+.device-lg .volvo1_icon-wrap {
+  margin-bottom: 10px;
+}
+
+.device-xxs .volvo1_icon-wrap,
+.device-xs .volvo1_icon-wrap,
+.device-sm .volvo1_icon-wrap {
+  margin-bottom: 40px;
+}
+
+.device-xs .gallery-intro-text,
+.device-xxs .gallery-intro-text {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.device-md .volvo1_features .features-inner,
+.device-lg .volvo1_features .features-inner {
+  margin-top: 55px;
+}
+
+.device-md .volvo1_vehicle-details-content .volvo1_gallery .gallery-img-nav img {
+  width: 236px;
+  height: 140px;
+}
+
+.device-md .volvo1_vehicle-details-content .volvo1_gallery .gallery-img-nav {
+  width: 708px;
+}
+
+.device-xxs .volvo1_gallery,
+.device-xs .volvo1_gallery,
+.device-sm .volvo1_gallery {
+  margin-bottom: 20px;
+}
+
+.device-xxs .volvo1_vehicle-details-content .volvo1_gallery .view-gallery-btn {
+  font-size: 18px;
+}

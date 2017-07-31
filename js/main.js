@@ -61,7 +61,7 @@ $(document).ready(function() {
 
     $(window).resize(mobileCTA);
     //$(window).resize(init_map_footer);
-}); 
+});
 /* ---------------------------------------------
  Mobile CTA collapsing menu
  --------------------------------------------- */
@@ -70,7 +70,7 @@ function mobileCTA() {
     if (pageWidth <= 767) {
         $('.volvo1_cta-title').attr("data-toggle", "collapse");
         $('#volvo1_cta1, #volvo1_cta2, #volvo1_cta3, #volvo1_cta4').addClass("collapse");
-        // Arrow icons 
+        // Arrow icons
         $('.volvo1_cta-title').click(function() {
             $(this).children('i').toggleClass('fa-chevron-right fa-chevron-down');
         });
@@ -87,19 +87,19 @@ function init_map_footer(){
     var gmMapDiv = $("#volvo1_dealer-gmap");
 
     (function($){
-               
+
         if (gmMapDiv.length) {
-        
+
             var gmCenterAddress = gmMapDiv.attr("data-address");
             var gmMarkerAddress = gmMapDiv.attr("data-address");
-            
-            
+
+
             gmMapDiv.gmap3({
                 action: "init",
                 marker: {
                     address: gmMarkerAddress,
                     options: {
-                        icon: "../build/img/map-marker.png"
+                        icon: "https://raw.githubusercontent.com/louisdalligos/DS-Volvo/master/img/map-marker.png"
                     }
                 },
                 map: {
@@ -127,13 +127,13 @@ function initContactPageMap() {
     var gmapContactPage = $("#contact-page-map");
 
     (function($){
-               
+
         if (gmapContactPage.length) {
-        
+
             var gmCenterAddress = gmapContactPage.attr("data-address");
             var gmMarkerAddress = gmapContactPage.attr("data-address");
-            
-            
+
+
             gmapContactPage.gmap3({
                 action: "init",
                 marker: {
@@ -141,7 +141,7 @@ function initContactPageMap() {
                     options: {
                         icon: "../build/img/map-marker.png"
                     },
-                    events:{ // events trigged by markers 
+                    events:{ // events trigged by markers
                         click: function(){
                             $(this).gmap3({
                                 infowindow:{
@@ -176,7 +176,7 @@ function initContactPageMap() {
 
 function mobileHeader(){
 
-} 
+}
 
 function desktopHeader(){
     if( $body.hasClass('device-lg') || $body.hasClass('device-md') ) {
@@ -213,4 +213,3 @@ function desktopHeader(){
         //mobileHeader();
     }
 }
-
