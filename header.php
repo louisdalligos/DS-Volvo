@@ -39,10 +39,10 @@
 
 					<?php
 						wp_nav_menu( array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'volvo1_main-menu',
-							'container'      => 'ul',
-							'menu_class' => 'list-unstyled list-inline hidden-xs hidden-sm'
+							'theme_location' 		=> 'menu-1',
+							'menu_id'        		=> 'volvo1_main-menu',
+							'walker' 						=> new Nav_Header_Walker_Menu('nav-primary'),
+							'menu_class' 				=> 'list-unstyled list-inline hidden-xs hidden-sm'
 						) );
 					?>
 

@@ -1,7 +1,7 @@
 var $window = $(window),
 $body = $('body'),
 $volvo_menu = $('#volvo1_main-menu'),
-$volvo_menu_items = $('.has-menu'),
+$volvo_menu_items = $('.menu-item-has-children'),
 $volvo_overlay = $('#volvo1_menu-overlay')
 
 // call jRespond and add breakpoints
