@@ -117,11 +117,23 @@ add_action( 'widgets_init', 'ds_volvo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ds_volvo_scripts() {
+	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	wp_enqueue_style( 'volvo-font',  get_template_directory_uri() .'/fonts/volvofont/stylesheet.css', array(), null, 'all' );
+
+	// Add our main style last item
 	wp_enqueue_style( 'ds-volvo-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'ds-volvo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	// Add jQuery from CDN
+	wp_deregister_script( 'jquery' );
+	wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', '', null, true);
+	wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 'ds-volvo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	// Vendor Scripts
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'jRespond', get_template_directory_uri() . '/js/jRespond.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'gmap3', get_template_directory_uri() . '/js/gmap3.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

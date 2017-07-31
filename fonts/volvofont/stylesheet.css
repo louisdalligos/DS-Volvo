@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'volvobroadregular';
+    src: url('volvobroad-webfont.eot');
+    src: url('volvobroad-webfont.eot?#iefix') format('embedded-opentype'),
+         url('volvobroad-webfont.woff2') format('woff2'),
+         url('volvobroad-webfont.woff') format('woff'),
+         url('volvobroad-webfont.ttf') format('truetype'),
+         url('volvobroad-webfont.svg#volvobroadregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: 'volvosansbold';
+    src: url('volvosansbold-webfont.eot');
+    src: url('volvosansbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('volvosansbold-webfont.woff2') format('woff2'),
+         url('volvosansbold-webfont.woff') format('woff'),
+         url('volvosansbold-webfont.ttf') format('truetype'),
+         url('volvosansbold-webfont.svg#volvosansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'volvosanslight';
+    src: url('volvo-sans-light-webfont.eot');
+    src: url('volvo-sans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('volvo-sans-light-webfont.woff2') format('woff2'),
+         url('volvo-sans-light-webfont.woff') format('woff'),
+         url('volvo-sans-light-webfont.ttf') format('truetype'),
+         url('volvo-sans-light-webfont.svg#volvosanslightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'volvo_sans_webregular';
+    src: url('volvosansweb-regular-webfont.eot');
+    src: url('volvosansweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('volvosansweb-regular-webfont.woff2') format('woff2'),
+         url('volvosansweb-regular-webfont.woff') format('woff'),
+         url('volvosansweb-regular-webfont.ttf') format('truetype'),
+         url('volvosansweb-regular-webfont.svg#volvo_sans_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'volvo_sans_webmedium';
+    src: url('volvosansweb-medium-webfont.eot');
+    src: url('volvosansweb-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('volvosansweb-medium-webfont.woff2') format('woff2'),
+         url('volvosansweb-medium-webfont.woff') format('woff'),
+         url('volvosansweb-medium-webfont.ttf') format('truetype'),
+         url('volvosansweb-medium-webfont.svg#volvo_sans_webmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'volvo_sans_webbold';
+    src: url('volvosansweb-bold-webfont.eot');
+    src: url('volvosansweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('volvosansweb-bold-webfont.woff2') format('woff2'),
+         url('volvosansweb-bold-webfont.woff') format('woff'),
+         url('volvosansweb-bold-webfont.ttf') format('truetype'),
+         url('volvosansweb-bold-webfont.svg#volvo_sans_webbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
