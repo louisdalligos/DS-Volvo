@@ -12,25 +12,44 @@
 
      <div class="volvo1_banner-slide page-banner">
     	<div class="carousel slide" data-ride="carousel" id="volvo1_carousel">
-    		<!-- Wrapper for slides -->
-    		<div class="carousel-inner">
-    			<div class="item active">
-    				<img alt="Banner 1" class="center-block full-img" src="<?php echo get_template_directory_uri(); ?>/img/banners/home-banner.jpg">
-    				<div class="slide-caption-text">
-    					<h2>Made by Sweden</h2>
-    					<p>Browse our lineup and discover our tradition of style<br>
-    					and safety built into each and every Volvo.</p><a class="btn btn-primary" href="#">Explore</a>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<img alt="Banner 2" class="center-block full-img" src="<?php echo get_template_directory_uri(); ?>/img/banners/home-banner.jpg">
-    				<div class="slide-caption-text">
-    					<h2>Caption here</h2>
-    					<p>Browse our lineup and discover our tradition of style<br>
-    					and safety built into each and every Volvo.</p><a class="btn btn-primary" href="#">Button</a>
-    				</div>
-    			</div>
-    		</div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <?php
+
+            $args = array(
+              'post_type'     => 'slide',
+              'post_status'   => 'publish',
+              'order'         => 'ASC',
+              'order_by'      => 'ID'
+            );
+
+            $cars = new WP_Query( $args );
+
+            $c = 0;
+
+            if( $cars->have_posts() ) : while( $cars->have_posts() ) : $cars->the_post();
+              $class = ''; $c++;
+              if ( $c == 1 ) $class .= ' active';
+            ?>
+              <div id="post-<?php the_ID(); ?>" class="item <?php echo $class; ?>">
+
+                <?php
+                  $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+                ?>
+                <img alt="Skoda" class="center-block full-img" src="<?php echo $image; ?>">
+
+
+                <div class="slide-caption-text">
+                  <h2><?php echo get_the_title(); ?></h2>
+        					<p><?php echo the_content(); ?></p>
+                  <a class="btn btn-primary" href="#">Explore</a>
+                </div>
+              </div><!-- end item --><?php
+              endwhile;
+              wp_reset_postdata();
+            endif; ?>
+          </div>
+
     	</div>
     </div>
 

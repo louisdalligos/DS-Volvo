@@ -139,7 +139,7 @@ function initContactPageMap() {
                 marker: {
                     address: gmMarkerAddress,
                     options: {
-                        icon: "../build/img/map-marker.png"
+                        icon: "https://raw.githubusercontent.com/louisdalligos/DS-Volvo/master/img/map-marker.png"
                     },
                     events:{ // events trigged by markers
                         click: function(){

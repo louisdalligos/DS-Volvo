@@ -174,3 +174,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Custom menu implementation.
  */
 require get_template_directory() . '/inc/custom-menu.php';
+
+/**
+ * Implement custom post types.
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
