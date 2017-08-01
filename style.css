@@ -459,6 +459,9 @@ textarea {
 .volvo1_page-footer .volvo1_footer-bottom .volvo1_copyright-text {
   margin-bottom: 50px;
 }
+.volvo1_page-footer .volvo1_footer-bottom .footer-menu {
+  font-size: 12px;
+}
 
 .home.volvo1_page-body-content {
   padding: 60px 0 40px;

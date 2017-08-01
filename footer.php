@@ -53,19 +53,22 @@
 					<a href="<?php echo get_theme_mod('youtube_link'); ?>"><i class="fa fa-youtube"></i></a>
 				</li>
 			</ul>
-			<p class="volvo1_copyright-text text-uppercase">
-				<small><?php echo get_theme_mod('copyright_text'); ?>
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-2',
-							'menu_id'        => 'footer-menu',
-							'container'      => 'p',
-							'menu_class' => 'footer-menu'
-						) );
-					?>
 
-					 Website by <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Dealer Solutions</a></small>
+			<p class="volvo1_copyright-text text-uppercase">
+				<small><?php echo get_theme_mod('copyright_text'); ?></small>
 			</p>
+
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-2',
+					'menu_id'        => 'footer-menu',
+					'container'      => 'div',
+					'menu_class' 		 => 'footer-menu text-uppercase list-unstyled list-inline'
+				) );
+			?>
+
+			<p class="text-uppercase"><small>Website by <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Dealer Solutions</a></small></p>
+
 			<img alt="Volvo" src="<?php echo get_template_directory_uri(); ?>/img/volvo-footer-logo.png">
 		</div>
 	</footer>
