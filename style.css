@@ -1089,3 +1089,6 @@ textarea {
 .device-xxs .volvo1_vehicle-details-content .volvo1_gallery .view-gallery-btn {
   font-size: 18px;
 }
+form.form-horizontal.cta-inner.toggle-wrapper {
+  padding-top: 0
+}

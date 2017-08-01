@@ -112,6 +112,16 @@ function ds_volvo_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home CTA Widget Area', 'ds-volvo' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'ds-volvo' ),
+		'before_widget' => '<div id="%1$s" class="col-lg-3 col-md-6 col-sm-6 cta-item %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title hidden">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'ds_volvo_widgets_init' );
 
@@ -142,6 +152,17 @@ function ds_volvo_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ds_volvo_scripts' );
+
+/**
+ * Enqueue Admin scripts
+ */
+add_action( 'admin_enqueue_scripts', 'ds_skoda_admin_scripts');
+
+function ds_skoda_admin_scripts() {
+	wp_enqueue_media();
+	wp_register_script('admin_custom_script', get_template_directory_uri() . '/js/admin-scripts.js', array('jquery') );
+	wp_enqueue_script('admin_custom_script');
+}
 
 /**
  * Implement the Custom Header feature.
@@ -179,3 +200,8 @@ require get_template_directory() . '/inc/custom-menu.php';
  * Implement custom post types.
  */
 require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
+ * Implement custom post types.
+ */
+require get_template_directory() . '/inc/custom-widgets.php';

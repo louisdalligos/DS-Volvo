@@ -53,6 +53,13 @@
     	</div>
     </div>
 
+    <!-- Home CTA -->
+    <div class="container volvo1_home-cta-section">
+    	<div class="row">
+    		<?php dynamic_sidebar( 'sidebar-2' ); ?>
+    	</div>
+    </div>
+
      <div class="volvo1_page-body-content home">
        <div class="container">
          <div class="row">
